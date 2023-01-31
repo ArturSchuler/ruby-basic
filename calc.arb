@@ -1,0 +1,8 @@
+puts "digite um numero inteiro"
+number1 = gets.chomp.to_i
+
+puts "digite o segundo numero inteiro"
+number2 = gets.chomp.to_i
+
+multiplicação = number1 * number2
+puts "o resultado da multiplicação é #{multiplicação}"

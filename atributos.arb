@@ -1,0 +1,13 @@
+class Dog
+    def name
+        @name
+    end
+
+    def name= name
+        @name = name
+    end    
+end
+
+cão = Dog.new
+cão.name = "mina"
+puts cão.name

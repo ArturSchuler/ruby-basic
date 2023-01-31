@@ -1,0 +1,9 @@
+puts "digite seu nome"
+
+nome = gets.chomp
+
+puts "digite seu sobrenome"
+
+sobrenome = gets.chomp
+
+puts "Olá #{nome} #{sobrenome}!"

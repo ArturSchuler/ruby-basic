@@ -1,0 +1,28 @@
+#Nessa linha esta sendo definido um metodo que se chama palindromo que recebe um parametro que chama palavra.
+def is_palindrome(palavra) 
+    palavra.downcase! # Comando para o palavra ser inserida como maiuscula ou minuscula?
+   
+#Nessa linha é difinido um parameltro para reverter uma string.
+    reverso = ""  
+
+#Parametro criado para contar os caracteres de uma palavra sobre o parametro palavra acima
+#recebe o comando .lenght para fazer a contagem.
+    count = palavra.length
+
+#Não compreendi muito bem esse mecanismo.
+    while count > 0
+     count -= 1 #quando o contador for maior que zero o contador é menor ou igual a um.
+     reverso += palavra[count] #A stg reversa é maior ou igual a palavra com seus caracteres contados?
+    end
+  
+#Se palavra é igual a stg reversa ela retorna um palindromo, se não ela retorna que não.    
+   if palavra == reverso 
+     return "#{palavra} é um palindromo"
+    else 
+     return "#{palavra} não é um palindromo"
+    end
+   end #fim do metodo
+   
+   puts "Verificar palavra:" # inserir uma stg no terminal.
+   a = gets.chomp #parametro a igual stg a ser inserida no terminal.
+   p is_palindrome(a) #comando para executar o metodo e inserir o resultado no terminal.

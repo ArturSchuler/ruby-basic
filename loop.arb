@@ -1,0 +1,47 @@
+resultado = ""
+
+loop do 
+    puts resultado
+    puts "selecione uma das seguintes opções"
+    puts "1 - descobrir o resultado de uma multiplicação"
+    puts "2 - descobrir o resultado de um divisão"
+    puts "0 - sair"
+    print "opção:"
+    
+    option = gets.chomp.to_i
+
+    if option == 1
+     puts "digite um numero inteiro"
+     number1 = gets.chomp.to_i
+
+     puts "digite o segundo numero inteiro"
+     number2 = gets.chomp.to_i
+
+     multiplicação = number1 * number2
+     puts "o resultado da multiplicação é #{multiplicação}"
+    end
+
+    if option == 2
+        puts "digite um numero inteiro"
+        number3 = gets.chomp.to_i
+        
+        puts "digite o segundo numero inteiro"
+        number4 = gets.chomp.to_i
+        
+        divisao = number3 / number4
+        puts "o resultado da divisão é #{divisao}"
+    end
+
+    if option == 0
+      break
+    
+
+    else
+        resultado = "opção invalida"
+    end
+    
+    system "clear"
+
+end
+
+

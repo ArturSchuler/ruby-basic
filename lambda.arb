@@ -1,0 +1,9 @@
+def capitalize_name
+  capitalize_name.capitalize = ""
+end
+
+capitalize_name = lambda {puts "artur"}
+
+
+capitalize_name.call
+

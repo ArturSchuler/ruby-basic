@@ -1,0 +1,6 @@
+class Mercado
+    def comprar
+        comprar = "voce comprou o produto #{@produto.nome} no valor de #{produto.preço}."
+    end
+end        
+

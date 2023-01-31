@@ -1,0 +1,11 @@
+day = "quinta"
+
+if day == "domingo"
+    almoço = "especial"
+elsif day == "terça"
+    almoço = "mais tarde"    
+else 
+    almoço = "normal"    
+end
+
+puts "almoço é #{almoço} hoje"

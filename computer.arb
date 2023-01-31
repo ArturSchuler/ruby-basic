@@ -1,0 +1,29 @@
+class Animal
+    def pular
+        puts "Toing"
+    end
+    
+    def dormir 
+        puts "ZzZ"
+    end
+end    
+
+class Dog < Animal
+    def latir
+        puts "auau"
+    end
+end 
+
+class Cat < Animal
+    def miar
+        puts "miau"
+    end    
+end
+cão = Dog.new
+cão.pular
+cão.dormir
+cão.latir
+
+gato = Cat.new
+gato.miar
+

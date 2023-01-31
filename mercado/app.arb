@@ -1,0 +1,14 @@
+class Produto
+    attr_accessor :nome, :preço
+end    
+
+class Mercado < Produto
+    def comprar
+        comprar = "voce comprou o produto #{produto.nome} no valor de #{produto.preço}."
+    end
+end     
+
+buy = Produto.new
+buy.nome = "carne"
+buy.preço = 50
+buy.comprar
